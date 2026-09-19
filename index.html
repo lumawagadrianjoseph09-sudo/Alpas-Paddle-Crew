@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALPAS Pickleball Club</title>
+  <meta name="description" content="ALPAS Pickleball Club — Break Free. Play Beyond.">
+  <style>
+    :root{
+      --ink:#10212b;
+      --muted:#66757d;
+      --cream:#f7f4ed;
+      --white:#fff;
+      --accent:#e26d3f;
+      --accent2:#183f4b;
+      --line:#dce2df;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream)}
+    a{text-decoration:none;color:inherit}
+    nav{position:sticky;top:0;z-index:20;background:rgba(247,244,237,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav-inner{max-width:1100px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:900;letter-spacing:2px}
+    .brand span{color:var(--accent)}
+    .links{display:flex;gap:22px;font-weight:700;font-size:14px}
+    .hero{max-width:1100px;margin:auto;padding:86px 22px 72px;display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
+    .eyebrow{font-weight:800;color:var(--accent);letter-spacing:2px;text-transform:uppercase;font-size:13px}
+    h1{font-size:clamp(56px,10vw,105px);line-height:.88;margin:14px 0 24px;letter-spacing:-5px}
+    .hero p{font-size:20px;line-height:1.55;color:var(--muted);max-width:650px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:14px 20px;border-radius:12px;font-weight:800;border:2px solid var(--accent2)}
+    .primary{background:var(--accent2);color:white}
+    .secondary{background:transparent}
+    .court{background:var(--accent2);border-radius:28px;padding:26px;min-height:330px;color:white;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 50px rgba(16,33,43,.16)}
+    .court-mark{font-size:80px;font-weight:900;opacity:.9;line-height:1}
+    .court small{opacity:.7;letter-spacing:2px;text-transform:uppercase}
+    section{max-width:1100px;margin:auto;padding:70px 22px}
+    .section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:25px}
+    h2{font-size:42px;letter-spacing:-2px;margin:0}
+    .section-head p{color:var(--muted);max-width:520px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:white;border:1px solid var(--line);border-radius:18px;padding:22px}
+    .member-name{font-size:22px;font-weight:900;margin-bottom:5px}
+    .role{color:var(--muted);font-size:14px;margin-bottom:20px}
+    .rating{font-size:36px;font-weight:900;color:var(--accent)}
+    .label{font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted)}
+    .table-wrap{overflow-x:auto;background:white;border:1px solid var(--line);border-radius:18px}
+    table{width:100%;border-collapse:collapse;min-width:600px}
+    th,td{text-align:left;padding:16px 18px;border-bottom:1px solid var(--line)}
+    th{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+    tr:last-child td{border-bottom:0}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#edf3f1;font-weight:800}
+    .apply{background:var(--accent2);color:white;border-radius:26px;padding:38px}
+    .apply h2{color:white}
+    .apply p{color:#c9d5d8}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px}
+    label{font-weight:800;font-size:14px}
+    input,select,textarea{width:100%;margin-top:7px;padding:13px 14px;border-radius:10px;border:1px solid #b9c7cb;font:inherit}
+    textarea{min-height:110px;resize:vertical}
+    .full{grid-column:1/-1}
+    .submit{border:0;background:var(--accent);color:white;padding:14px 20px;border-radius:10px;font-weight:900;font-size:16px;cursor:pointer}
+    footer{padding:35px 22px;text-align:center;color:var(--muted);font-size:14px}
+    @media(max-width:760px){
+      .links{display:none}
+      .hero{grid-template-columns:1fr;padding-top:55px}
+      .cards{grid-template-columns:1fr}
+      form{grid-template-columns:1fr}
+      .full{grid-column:auto}
+      h1{letter-spacing:-3px}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="#">AL<span>PAS</span></a>
+      <div class="links">
+        <a href="#members">Members</a>
+        <a href="#ratings">DUPR</a>
+        <a href="#join">Join</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="eyebrow">Pickleball Club</div>
+      <h1>ALPAS</h1>
+      <p><strong>Break Free. Play Beyond.</strong><br>
+      A community built around competition, friendship, growth, and the freedom to play your best game.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#join">Apply to Join</a>
+        <a class="btn secondary" href="#members">Meet the Members</a>
+      </div>
+    </div>
+    <div class="court">
+      <small>ALPAS Pickleball Club</small>
+      <div class="court-mark">A</div>
+      <div><strong>PLAY WITH PURPOSE.</strong><br>Rally. Improve. Belong.</div>
+    </div>
+  </header>
+
+  <section id="members">
+    <div class="section-head">
+      <h2>Members</h2>
+      <p>Replace the sample profiles below with your actual club members.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="member-name">Member Name 01</div><div class="role">Founding Member</div><div class="label">DUPR Rating</div><div class="rating">3.50</div></div>
+      <div class="card"><div class="member-name">Member Name 02</div><div class="role">Club Member</div><div class="label">DUPR Rating</div><div class="rating">3.25</div></div>
+      <div class="card"><div class="member-name">Member Name 03</div><div class="role">Club Member</div><div class="label">DUPR Rating</div><div class="rating">3.75</div></div>
+    </div>
+  </section>
+
+  <section id="ratings">
+    <div class="section-head">
+      <h2>DUPR Ratings</h2>
+      <p>A simple club leaderboard. Keep ratings updated as members' official DUPR ratings change.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Player</th><th>Level</th><th>DUPR</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Member Name 01</td><td>Intermediate</td><td><strong>3.50</strong></td><td><span class="badge">Active</span></td></tr>
+          <tr><td>Member Name 02</td><td>Intermediate</td><td><strong>3.25</strong></td><td><span class="badge">Active</span></td></tr>
+          <tr><td>Member Name 03</td><td>Intermediate+</td><td><strong>3.75</strong></td><td><span class="badge">Active</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="join">
+    <div class="apply">
+      <h2>Join ALPAS</h2>
+      <p>Tell us a little about yourself and your pickleball experience.</p>
+      <form id="joinForm">
+        <div><label>Full Name<input required name="name" placeholder="Your name"></label></div>
+        <div><label>Email<input required type="email" name="email" placeholder="you@example.com"></label></div>
+        <div><label>Phone<input name="phone" placeholder="+63"></label></div>
+        <div><label>DUPR Rating<input name="dupr" type="number" step="0.01" min="1" max="8" placeholder="e.g. 3.50"></label></div>
+        <div><label>Experience
+          <select name="experience"><option>Beginner</option><option>Intermediate</option><option>Advanced</option><option>Competitive</option></select>
+        </label></div>
+        <div><label>Preferred Play
+          <select name="play"><option>Singles</option><option>Doubles</option><option>Both</option></select>
+        </label></div>
+        <div class="full"><label>Why do you want to join?<textarea name="message" placeholder="Tell us a little about yourself..."></textarea></label></div>
+        <div class="full"><button class="submit" type="submit">Submit Application</button></div>
+      </form>
+    </div>
+  </section>
+
+  <footer>© 2026 ALPAS Pickleball Club · Break Free. Play Beyond.</footer>
+
+  <script>
+    document.getElementById('joinForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = new FormData(this);
+      const body = [...data.entries()].map(([k,v]) => `${k}: ${v}`).join('\\n');
+      window.location.href = `mailto:YOUR-CLUB-EMAIL@example.com?subject=ALPAS%20Membership%20Application&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+</body>
+</html>
